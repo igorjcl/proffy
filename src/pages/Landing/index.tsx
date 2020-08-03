@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import logoImg from "../../images/logo.svg";
 import landingImg from "../../images/landing.svg";
 
@@ -23,14 +25,14 @@ export const Landing = () => {
           className="hero-image"
         />
         <div className="buttons-container">
-          <a href="/" className="study">
+          <Link to="/study" className="study">
             <img src={studyIcon} alt="Estudar" />
             Estudar
-          </a>
-          <a href="/" className="give-classes">
+          </Link>
+          <Link to="/give-classes" className="give-classes">
             <img src={giveClasses} alt="Dar aulas" />
             Dar aulas
-          </a>
+          </Link>
         </div>
 
         <span className="total-connections">
