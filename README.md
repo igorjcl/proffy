@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://github.com/igorjc/proffy/blob/master/.github/logo.png" alt="Proffy" width="280"/>
+   <img src="https://github.com/igorjcl/proffy/blob/master/.github/logo.png" alt="Proffy" width="280"/>
 </p>
 <p>
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
