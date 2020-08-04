@@ -23,7 +23,7 @@
 ### Web Screenshot
 
 <div style="display: flex; flex-direction: 'row'; align-items: 'center';">
-   <img src="https://github.com/igorjcl/proffy/blob/master/.github/application-web.png" width="500px">
+   <img src="https://github.com/igorjcl/proffy/blob/master/.github/application-web.gif" width="500px">
 </div>
 
 # :computer: Technologies
