@@ -5,6 +5,7 @@ import "./styles.css";
 import { PageHeader } from "../../components/PageHeader";
 import { LeftAnimation } from "../../utils/animations";
 import { Input } from "../../components/Input";
+import { Textarea } from "../../components/Textarea";
 
 import warningIcon from "../../assets/images/icons/warning.svg";
 
@@ -24,6 +25,7 @@ export const TeacherForm = () => {
             <Input name="name" label="Nome completo" />
             <Input name="avatar" label="Avatar" />
             <Input name="whatsapp" label="Nome completo" />
+            <Textarea name="bio" label="Biografia" />
           </fieldset>
 
           <fieldset>
