@@ -8,6 +8,7 @@ import { Input } from "../../components/Input";
 import { Textarea } from "../../components/Textarea";
 
 import warningIcon from "../../assets/images/icons/warning.svg";
+import { Select } from "../../components/Select";
 
 export const TeacherForm = () => {
   return (
@@ -31,7 +32,18 @@ export const TeacherForm = () => {
           <fieldset>
             <legend>Sobre a aula</legend>
 
-            <Input name="subjet" label="Matéria" />
+            <Select
+              name="subjet"
+              label="Matéria"
+              options={[
+                { value: "Artes", label: "Artes" },
+                { value: "Biologia", label: "Biologia" },
+                { value: "Português", label: "Português" },
+                { value: "Matemática", label: "Matemática" },
+                { value: "Ingês", label: "Ingês" },
+                { value: "Química", label: "Química" },
+              ]}
+            />
             <Input name="cost" label="Custo da sua hora por aula" />
           </fieldset>
           <footer>
