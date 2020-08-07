@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -11,8 +11,18 @@ import purpleHeartIcon from "../../assets/images/icons/purple-heart.svg";
 
 import "./styles.css";
 import { OpacityAnimation } from "../../utils/animations";
+import { api } from "../../services/api";
 
 export const Landing = () => {
+  const [totalConnections, setTotalConnections] = useState(0);
+
+  useEffect(() => {
+    api.get("connections").then(({ data }) => {
+      const { total } = data;
+      setTotalConnections(total);
+    });
+  }, []);
+
   return (
     <OpacityAnimation>
       <div id="page-landing">
@@ -38,7 +48,7 @@ export const Landing = () => {
           </div>
 
           <span className="total-connections">
-            Total de 200 conexões já realizadas
+            Total de {totalConnections} conexões já realizadas
             <img src={purpleHeartIcon} alt="Coração" />
           </span>
         </div>

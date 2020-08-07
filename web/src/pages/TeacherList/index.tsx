@@ -18,7 +18,7 @@ export const TeacherList = () => {
         >
           <form id="search-teachers">
             <Select
-              name="subjet"
+              name="subject"
               label="Matéria"
               options={[
                 { value: "Artes", label: "Artes" },
