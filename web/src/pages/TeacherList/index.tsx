@@ -1,16 +1,19 @@
 import React from "react";
 
+import "./styles.css";
+
 import { PageHeader } from "../../components/PageHeader";
 import { TeacherItem } from "../../components/TeacherItem";
-
-import "./styles.css";
 import { LeftAnimation } from "../../utils/animations";
 
 export const TeacherList = () => {
   return (
     <LeftAnimation>
       <div id="page-teacher-list" className="container">
-        <PageHeader title="Estes são os proffys disponíveis.">
+        <PageHeader
+          title="Estes são os proffys disponíveis."
+          description="O primeiro passo é preencher esse formulário de inscrição"
+        >
           <form id="search-teachers">
             <div className="input-block">
               <label htmlFor="subject">Matéria</label>

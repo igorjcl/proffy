@@ -58,7 +58,7 @@ export const OpacityAnimation = ({ children }) => {
     ease: "anticipate",
     duration: 0.5,
   };
-  
+
   return (
     <motion.div
       style={{
